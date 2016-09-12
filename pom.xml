@@ -39,7 +39,8 @@
 					</dependency>
 				</dependencies>
 				<configuration>
-					<preparationGoals>dotnet:update-versions</preparationGoals>
+					<preparationGoals>dotnet:update-versions scm:add -Dincludes=**/project.json</preparationGoals>
+					<completionGoals>dotnet:update-versions scm:add -Dincludes=**/project.json</completionGoals>
 				</configuration>
 			</plugin>
 		</plugins>
